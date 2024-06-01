@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+    environment:
+      - DB_CONNECTION=pgsql
+      - DB_HOST=aws-0-ap-northeast-1.pooler.supabase.com
+      - DB_PORT=6543
+      - DB_DATABASE=postgres
+      - DB_USERNAME=postgres.umorhiaqlfhqjnxvgboo
+      - DB_PASSWORD=/!)arnCM7HY@wMp
